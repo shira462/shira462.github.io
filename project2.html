@@ -13,7 +13,14 @@
   body {
       font: 20px Montserrat, sans-serif;
       line-height: 1.8;
-      color: #f5f6f7;
+  }
+  .mybutton{
+    border-color:#555555;
+    background-color: #555555;
+  }
+  .mybutton:hover{
+    border-color:#2f2f2f;
+    background-color: #2f2f2f;
   }
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
@@ -62,3 +69,94 @@
     </div>
   </div>
 </nav>
+
+<div class="text-center">
+<img src="images/munchy.png" width="500px" style="padding-top:15px">
+<h4 style="padding:10px"> Designed in Figma. Built in HTML, CSS, and JavaScript.</h4>
+<a href="https://joshydotpoo.github.io/munchy/"><button type="button" class="btn btn-primary btn-lg mybutton">Visit Site</button></a>
+</div>
+
+<div style="padding-left:130px;padding-top:15px;padding-right:130px">
+    <h1>Background</h1>
+    <p> 
+            As a group of UCSD students, we were interested in learning more about the eating and cooking habits of students on campus. Why do some prefer to bring food from home, while others prefer to eat out at the venues on campus? What are the advantages or disadvantages of each? 
+            What alternatives exist on campus for eating healthy on a budget? 
+    </p>
+    <p>    
+            After interviewing a variety of students from different parts of campus, we gained some insights about these questions. Some students preferred to eat out because cooking is too time consuming, or perhaps they were too busy the day before to prepare their meals. Others preferred to prepare their own food because they have more control over the ingredients and it saves them money in the long run. Some students found alternatives for eating out without the expenses -  volunteers at a student run food co-op on campus were able to exchange their volunteer hours cooking and selling low-cost vegan meals for students in exchange for eating there for free. 
+    </p>
+    <p>
+            Upon reflecting on the different needs and experiences of these students, we developed a problem statement based on our insights. 
+    </p>
+    <p style="padding:15px;font-style:italic">
+        <strong >Problem Statement:</strong>
+        As a student, it’s difficult to find a balance between eating out and preparing meals at home. While eating out might save time in the short term, it can become quite expensive in the long term, whereas cooking from home can help lower eating expenses and gives students more control over the nutritional value of their meals.
+    </p>
+    <h1>Storyboarding</h2>
+    <p style="padding-bottom:20px"> Next, we used storyboarding to brainstorm different potential solutions that would address our users’ needs. The example below addresses the problem of eating-out expenses by offering a better resource to help students learn new recipes and encourage them to cook from home.</p>
+    <img src="images/story1.jpg" width="525x">
+    <img src="images/story2.jpg" width="525x">
+
+    <h1 style="padding-bottom:20px;padding-top:20px">Paper Prototyping </h1>
+    <img style="padding: 0 15px; float:left" src="images/paper_prototype.gif" width="350px"> 
+    <p style="padding-top:50px; padding-bottom: 250px;">We then created paper prototypes inspired by our storyboard to help visualize the user interactions that would be involved in our app. We imagined a social platform similar to instagram that would appeal to a student audience. Users could upload recipes with steps and videos and share them with friends or followers. They could also look up recipes according to different meal categories, preparation time, and dietary restrictions.
+    </p>
+    
+
+    <h1>Wireframing</h1>
+    <p style="padding-bottom:20px"> 
+            Below are wireframes for the three main pages of our app in its initially imagined phase. The first screen on the left would be the home page, which would have an infinite-scroll feed of recipes uploaded by other users. The second screen in the middle shows what you would see if you clicked on one of the recipes. The third screen on the right shows a scrolled-down view of a recipe page that would include ingredients and videos. 
+    </p>
+    <p style="text-align:center"> <img src="images/layout.png" width="700x"></p>
+
+    <h1 style="padding-top:20px;">Implementation</h1>
+
+    <h2 style="padding-top:10px">Iteration 1 - Skeleton Website</h2>
+    <p> After creating the wireframes, we built a skeleton website that showed its main functionalities - viewing, liking, and uploading recipes. The website was built using React, a JavaScript library. </p>
+    <img src="images/screen0.png" width="800px">
+
+    <h2 style="padding-top:20px">Iteration 2 - Homepage Redesign </h2>
+    <p style="padding-bottom:10px">We decided to simplify the coding aspect of our project by stripping the React components and replacing them with HTML and Javascript code. This allowed us to focus more on implementing the design and key functionalities of our app. We also simplified the recipe cards on the homepage so they would look less cluttered and allow users to easily bookmark recipes. </p>
+    <img src="images/screen2.png" width="800px" style="border-color:lightgray; border-width: 1px;border-style: solid">
+    
+
+    <h2 style="padding-top:20px">Iteration 3 - Meal Planner</h2>
+    <p style="padding-bottom:10px">After receiving feedback on our design, we realized that our app wasn't really bringing anything new to the table in the sense that it was too similar to other recipe apps, and wasn't helping our users gain any new insights. 
+       At this point, we had to go back to the drawing board and come up with a unique functionality for our app. We revisited our Problem Statement, and looked at existing solutions for inspiration. 
+    </p>
+    <p>
+       Finally, we came up with the idea of a Meal Planning feature.
+       This feature would allow users to plan their meals for the week using their bookmarked recipes, and keep track of how often they ate out. In this way, by planning and reviewing their meals for the week, users could gain insights about their cooking and eating habits. 
+    </p>
+    <img src="images/screen3.png" width="800px">
+
+    <h2 style="padding-top:20px">Iteration 4 - Meal Planner Redesign</h2>
+    <p style="padding-bottom:10px"> We changed the layout of our meal planner so the days were separated by horizontal tabs to give it more of a calendar-like view. We also separated each day into Breakfast, Lunch, and Dinner so users could plan to either cook or eat out for all three meals. </p>
+    <img src="images/screen4.png" width="800px" style="border-color:lightgray; border-width: 1px;border-style: solid">
+
+    <h1 style="padding-top:20px">User Testing</h1>
+    <p> 
+        For our user testing, we were interested in the user flow of bookmarking recipes and adding them to the meal planner. We found that some users attempted to plan a meal directly from the recipe page, instead of navigating to the meal planner tab from the homepage. We also found that within the meal planner, some users were confused about the focus of the app - whether it was supposed to encourage users to eat healthier or save money (since we prompted users to enter a price for eating-out entries). We decided to remove the cost input in order to narrow the scope of our application. 
+    </p>
+    <p>
+        Furthermore, another user pointed out that they were unsure whether their input was saved in the meal planner when they clicked the “submit” button at the bottom of the page. We decided to change the button to “save” instead, and added a summary box in the right hand column so users have a visual cue that their information was saved. 
+    </p>
+
+    <h1 style="padding-top:20px">Final Design</h1>
+    <p style="padding-bottom:10px"> 
+        Based on the feedback we gathered from our user testing, we came up with a final design for our app. We also reflected on future revisions and improvements we could make- such as making the meal planning feature accessible directly from the recipe pages, and possibly implementing a full calendar view so users could plan for multiple weeks at a time. 
+    </p>
+    <img src="images/screen6.png" width="530px" style="border-color:lightgray; border-width: 1px;border-style: solid">
+    <img src="images/screen5.png" width="530px" style="border-color:lightgray; border-width: 1px;border-style: solid">
+
+    
+
+   <!-- <p style="text-align:center; padding-top:20px">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kcWGkgxV2UI?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p> -->
+    
+    <p style="padding:50px"></p>
+</div>
+
+</body>
+</html>
